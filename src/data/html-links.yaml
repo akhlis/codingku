@@ -1,0 +1,338 @@
+- title: HTML5 Tutorial
+  items:
+    - title: HTML - Pengertian HTML
+      link: /html
+    - title: HTML - Teks Editor
+      link: /html/text-editor
+    - title: HTML - Dasar
+      link: /html/html-dasar
+    - title: HTML - Tag & Element
+      link: /html/tag-dan-element-html
+    - title: HTML - Atribut
+      link: /html/atribut-html
+    - title: HTML - Tag Judul
+      link: /html/tag-judul
+    - title: HTML - Tag Paragraf
+      link: /html/tag-paragraf
+    - title: HTML - Style
+      link: /html/style
+    - title: HTML - Format Teks
+      link: /html/format-teks
+    - title: HTML - Format Teks Quote
+      link: /html/teks-quote
+    - title: HTML - Comment
+      link: /html/comment
+    - title: HTML - Warna
+      link: /html/warna
+    - title: HTML - Menyisipkan CSS
+      link: /html/css
+    - title: HTML - Link
+      link: /html/link
+    - title: HTML - Menyisipkan Gambar
+      link: /html/images
+    - title: HTML - Membuat Tabel
+      link: /html/table
+    - title: HTML - Tag List
+      link: /html/list
+    - title: HTML - Elemen Block & Inline
+      link: /html/block-dan-inline
+    - title: HTML - Atribut Class
+      link: /html/atribut-class
+    - title: HTML - Atribut Id
+      link: /html/atribut-id
+    - title: HTML - Tag Iframe
+      link: /html/tag-iframe
+    - title: HTML - Menyisipkan Javascript
+      link: /html/javascript
+    - title: HTML - Menyisipkan File
+      link: /html/file-path
+    - title: HTML - Tag Head
+      link: /html/tag-head
+    - title: HTML - Layout
+      link: /html/layout
+    - title: HTML - Desain Responsive
+      link: /html/responsive
+    - title: HTML - Karakter Entity & Simbol
+      link: /html/entity
+    - title: HTML - Charset
+      link: /html/charset
+    - title: HTML - URL Encode
+      link: /html/url-encode
+
+- title : HTML Form
+  items:
+    - title: HTML - Form
+      link: /html/form
+    - title: HTML - Form Element
+      link: /html/form-element
+    - title: HTML - Input Type
+      link: /html/input-type
+    - title: HTML - Atribut Input
+      link: /html/atribut-input
+
+- title : HTML5
+  items:
+    - title: HTML5 - Pengenalan
+      link: /html/html5
+    - title: HTML5 - Elemen Baru
+      link: /html/elemen-baru
+    - title: HTML5 - Semantic
+      link: /html/semantic
+    - title: HTML5 - Panduan Menulis Kode
+      link: /html/panduan
+      
+- title : Referensi HTML
+  items:
+    - title: HTML - Tag list
+      link: /html/tag-list
+    - title: HTML - Atribut
+      link: /html/atribut
+    - title: HTML - Event
+      link: /html/event
+    - title: HTML - Warna
+      link: /html/warna
+    - title: HTML - Canvas
+      link: /html/canvas
+    - title: HTML - Audio/Video
+      link: /html/audio-video
+    - title: HTML - Doctype
+      link: /html/doctype
+      
+- title : HTML Tags
+  items:
+    - title: <!-->
+      link: /html/tags/tag-comment
+    - title: <!DOCTYPE>
+      link: /html/tags/tag-doctype
+    - title: <a>
+      link: /html/tags/tag-a
+    - title: <abbr>
+      link: /html/tags/tag-abbr
+    - title: <acronym>
+      link: /html/tag-acronym
+    - title: <address>
+      link: /html/tags/tag-address
+    - title: <applet>
+      link: /html/tag-applet
+    - title: <area>
+      link: /html/tags/tag-area
+    - title: <article>
+      link: /html/tags/tag-article
+    - title: <aside>
+      link: /html/tags/tag-aside
+    - title: <audio>
+      link: /html/tags/tag-audio
+    - title: <b>
+      link: /html/tags/tag-b
+    - title: <base>
+      link: /html/tags/tag-base
+    - title: <basefont>
+      link: /html/tags/tag-basefont
+    - title: <bdi>
+      link: /html/tags/tag-bdi
+    - title: <bdo>
+      link: /html/tags/tag-bdo
+    - title: <big>
+      link: /html/tags/tag-big
+    - title: <blockquote>
+      link: /html/tags/tag-blockquote
+    - title: <body>
+      link: /html/tags/tag-body
+    - title: <br>
+      link: /html/tags/tag-br
+    - title: <button>
+      link: /html/tags/tag-button
+    - title: <canvas>
+      link: /html/tags/tag-canvas
+    - title: <caption>
+      link: /html/tags/tag-caption
+    - title: <center>
+      link: /html/tags/tag-center
+    - title: <cite>
+      link: /html/tags/tag-cite
+    - title: <code>
+      link: /html/tags/tag-code
+    - title: <col>
+      link: /html/tags/tag-col
+    - title: <colgroup>
+      link: /html/tags/tag-colgroup
+    - title: <data>
+      link: /html/tags/tag-data
+    - title: <datalist>
+      link: /html/tags/tag-datalist
+    - title: <dd>
+      link: /html/tags/tag-dd
+    - title: <del>
+      link: /html/tags/tag-del
+    - title: <details>
+      link: /html/tags/tag-details
+    - title: <dfn>
+      link: /html/tags/tag-dfn
+    - title: <dialog>
+      link: /html/tags/tag-dialog
+    - title: <dir>
+      link: /html/tags/tag-dir
+    - title: <div>
+      link: /html/tags/tag-div
+    - title: <dl>
+      link: /html/tags/tag-dl
+    - title: <dt>
+      link: /html/tags/tag-dt
+    - title: <em>
+      link: /html/tags/tag-em
+    - title: <embed>
+      link: /html/tags/tag-embed
+    - title: <fieldset>
+      link: /html/tags/tag-fieldset
+    - title: <figcaption>
+      link: /html/tags/tag-figcaption
+    - title: <figure>
+      link: /html/tags/tag-figure
+    - title: <font>
+      link: /html/tags/tag-font
+    - title: <footer>
+      link: /html/tags/tag-footer
+    - title: <form>
+      link: /html/tags/tag-form
+    - title: <frame>
+      link: /html/tags/tag-frame
+    - title: <frameset>
+      link: /html/tags/tag-frameset
+    - title: <h1> - <h6>
+      link: /html/tags/tag-h1-h6
+    - title: <head>
+      link: /html/tags/tag-head
+    - title: <header>
+      link: /html/tags/tag-header
+    - title: <hr>
+      link: /html/tags/tag-hr
+    - title: <html>
+      link: /html/tags/tag-html
+    - title: <i>
+      link: /html/tags/tag-i
+    - title: <iframe>
+      link: /html/tags/tag-iframe
+    - title: <img>
+      link: /html/tags/tag-img
+    - title: <input>
+      link: /html/tags/tag-input
+    - title: <ins>
+      link: /html/tags/tag-ins
+    - title: <kbd>
+      link: /html/tags/tag-kbd
+    - title: <label>
+      link: /html/tags/tag-label
+    - title: <legend>
+      link: /html/tags/tag-legend
+    - title: <li>
+      link: /html/tags/tag-li
+    - title: <link>
+      link: /html/tags/tag-link
+    - title: <main>
+      link: /html/tags/tag-main
+    - title: <map>
+      link: /html/tags/tag-map
+    - title: <mark>
+      link: /html/tags/tag-mark
+    - title: <meta>
+      link: /html/tags/tag-meta
+    - title: <meter>
+      link: /html/tags/tag-meter
+    - title: <nav>
+      link: /html/tags/tag-nav
+    - title: <noframes>
+      link: /html/tags/tag-noframes
+    - title: <noscript>
+      link: /html/tags/tag-noscript
+    - title: <object>
+      link: /html/tags/tag-object
+    - title: <ol>
+      link: /html/tags/tag-ol
+    - title: <optgroup>
+      link: /html/tags/tag-optgroup
+    - title: <option>
+      link: /html/tags/tag-option
+    - title: <output>
+      link: /html/tags/tag-output
+    - title: <p>
+      link: /html/tags/tag-p
+    - title: <param>
+      link: /html/tags/tag-param
+    - title: <picture>
+      link: /html/tags/tag-picture
+    - title: <pre>
+      link: /html/tags/tag-pre
+    - title: <progress>
+      link: /html/tags/tag-progress
+    - title: <q>
+      link: /html/tags/tag-q
+    - title: <rp>
+      link: /html/tags/tag-rp
+    - title: <rt>
+      link: /html/tags/tag-rt
+    - title: <ruby>
+      link: /html/tags/tag-ruby
+    - title: <s>
+      link: /html/tags/tag-s
+    - title: <samp>
+      link: /html/tags/tag-samp
+    - title: <script>
+      link: /html/tags/tag-script
+    - title: <section>
+      link: /html/tags/tag-section
+    - title: <select>
+      link: /html/tags/tag-select
+    - title: <small>
+      link: /html/tags/tag-small
+    - title: <source>
+      link: /html/tags/tag-source
+    - title: <span>
+      link: /html/tags/tag-span
+    - title: <strike>
+      link: /html/tags/tag-strike
+    - title: <strong>
+      link: /html/tags/tag-strong
+    - title: <style>
+      link: /html/tags/tag-style
+    - title: <sub>
+      link: /html/tags/tag-sub
+    - title: <summary>
+      link: /html/tags/tag-summary
+    - title: <sup>
+      link: /html/tags/tag-sup
+    - title: <svg>
+      link: /html/tags/tag-svg
+    - title: <table>
+      link: /html/tags/tag-table
+    - title: <tbody>
+      link: /html/tags/tag-tbody
+    - title: <template>
+      link: /html/tags/tag-template
+    - title: <textarea>
+      link: /html/tags/tag-textarea
+    - title: <tfoot>
+      link: /html/tags/tag-tfoot
+    - title: <th>
+      link: /html/tags/tag-th
+    - title: <thead>
+      link: /html/tags/tag-thead
+    - title: <time>
+      link: /html/tags/tag-time
+    - title: <title>
+      link: /html/tags/tag-title
+    - title: <tr>
+      link: /html/tags/tag-tr
+    - title: <track>
+      link: /html/tags/tag-track
+    - title: <tt>
+      link: /html/tags/tag-tt
+    - title: <u>
+      link: /html/tags/tag-u
+    - title: <ul>
+      link: /html/tags/tag-ul
+    - title: <var>
+      link: /html/tags/tag-var
+    - title: <video>
+      link: /html/tags/tag-video
+    - title: <wbr>
+      link: /html/tags/tag-wbr
