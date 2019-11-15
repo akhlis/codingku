@@ -1,12 +1,5 @@
 #app {
 
-  h1,
-  h2 {
-    code {
-      font-size: 1.9rem;
-    }
-  }
-
   pre,
   code {
     font-family: Space Mono, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
@@ -53,6 +46,20 @@
     vertical-align: 1%;
     font-size: 1.6rem;
     background-color: var(--inline-code-bg);
+  }
+
+  h1,
+  h2 {
+    code {
+      font-size: 2.6rem;
+    }
+  }
+
+  h3,
+  h4 {
+    code {
+      font-size: 1.9rem;
+    }
   }
 }
 
