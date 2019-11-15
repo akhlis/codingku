@@ -1,7 +1,38 @@
 :root {
-  --body-color: hsla(0, 0%, 0%, 0.8);
   --primary-color: #00a672;
   --primary-color-dark: #00835c;
+  --accent-color: #5ED3A2;
+  --hovered-accent-color: #3BBA95;
+  --accent-bg: #c5fbcb;
+  --primary-text-color: hsl(0, 0%, 22%);
+  --hovered-text-color: hsla(0, 0%, 22%, .8);
+  --secondary-text-color: hsl(0, 0%, 47%);
+  --light-text-color: hsl(0, 0%, 100%);
+  --lightgrey-text-color: hsl(0, 0%, 52%);
+  --main-bg: hsl(0, 0%, 100%);
+  --blog-link-color: #FF9999;
+  --nav-bg: hsl(0, 0%, 100%);
+  --nav-hovered-bg: #1F222B;
+  --landing-bg: #4e7b99;
+  --landing-hovered-bg: #4a6e86;
+  --footer-bg: #21242D;
+  --success-color: #25d366;
+  --warning-color: #ffc107; /*rgb(247, 234, 0);*/
+  --warm-color: #f1776c;
+  --danger-color: #dc3545; /*#ff0000;*/
+  --fb-color: #3b5999;
+  --tw-color: #55acee;
+  --gplus-color: #dd4b39;
+  --ig-color: #3f729b;
+  --wa-color: #25d366;
+  --mail-color: #0084ff;
+  --box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .03);
+  --black-shadow: 0px 4px 18px -3px rgba(17, 17, 17, .06);
+  --hovered-black-shadow: 0 3px 16px 0 rgba(0,0,0,.11);
+  --nav-height: 52px;
+  --header-height: 58px;
+
+  --body-color: hsla(0, 0%, 0%, 0.8);
   --header-height: 58px;
   --bg: #fff;
   --bg-secondary: #f3f5f4;
@@ -21,6 +52,9 @@
   --space-x2: 50px;
   --code-color: #fdf9f3;
   --glow: 2px 2px 15px 0 var(--border-color-darker);
+
+  --header-font: 'Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif';
+  --body-font: 'Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif';
 
   @media screen and (max-width: 550px) {
     --space: 20px;

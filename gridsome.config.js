@@ -16,13 +16,28 @@ module.exports = {
       .use('svg-to-vue-component')
       .loader('svg-to-vue-component/loader')
 
+    config.module
+      .rule('postcss')
+      .oneOf('normal')
+      .use('postcss-loader')
+      .tap(options => {
+        options.plugins.unshift(...[
+          require('postcss-import'),
+          require('postcss-nested'),
+          require('postcss-custom-media'),
+          require('postcss-preset-env'),
+          require('postcss-url'),
+          require('postcss-color-function'),
+          require('postcss-custom-properties'),
+        ])
+        return options
+      })
+
     if (isServer) {
       config.externals(nodeExternals({
         whitelist: [
           /\.css$/,
           /\?vue&type=style/,
-          /vue-instantsearch/,
-          /instantsearch.js/,
           /typeface-league-spartan/
          ]
       }))
@@ -30,7 +45,7 @@ module.exports = {
   },
 
   templates: {
-    BlogPost: '/blog/:year/:month/:day/:slug',
+    BlogPost: '/blog/:title',
     Contributor: '/contributor/:id',
     Starter: '/starters/:title',
     Platform: '/starters/platform/:id',
@@ -38,12 +53,6 @@ module.exports = {
   },
 
   plugins: [
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-127625720-1'
-      }
-    },
     {
       use: '@gridsome/plugin-critical',
       options: {
@@ -98,10 +107,52 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         index: ['README'],
+        baseDir: './css',
+        pathPrefix: '/css',
+        typeName: 'CssPage',
+        template: './src/templates/CssPage.vue',
+        plugins: [
+          '@gridsome/remark-prismjs'
+        ],
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        index: ['README'],
         baseDir: './html/tags',
         pathPrefix: '/html/tags',
         typeName: 'TagsPage',
         template: './src/templates/TagsPage.vue',
+        plugins: [
+          '@gridsome/remark-prismjs'
+        ],
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        index: ['README'],
+        baseDir: './html/cssref',
+        pathPrefix: '/html/cssref',
+        typeName: 'CssrefPage',
+        template: './src/templates/CssrefPage.vue',
         plugins: [
           '@gridsome/remark-prismjs'
         ],

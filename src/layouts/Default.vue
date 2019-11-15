@@ -1,7 +1,7 @@
 <template>
     <div id="app" dark>
       <Header />
-      <main id="main" :class="mainClass">
+      <main id="main" class="grid" :class="mainClass">
         <slot />
       </main>
       <LazyHydrate ssr-only v-if="footer !== false">
@@ -32,16 +32,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#app main {
-  flex: 1;
-}
+<style lang="postcss">
 .main--bg-teritary {
   background-color: var(--bg-teritary);
 }

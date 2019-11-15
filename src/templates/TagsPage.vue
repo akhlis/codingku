@@ -1,7 +1,7 @@
 <template>
-  <DocsLayout :subtitles="subtitles" :links="links">
-    <VueRemarkContent class="post mb"></VueRemarkContent>
-  </DocsLayout>
+  <RefsLayout :subtitles="subtitles" :links="links">
+    <VueRemarkContent class="post__ref mb"></VueRemarkContent>
+  </RefsLayout>
 </template>
 
 <page-query>
@@ -47,39 +47,6 @@ export default {
 </script>
 
 <style lang="scss">
-.example {
-  .example__label {
-    margin: 0;
-  }
-  .example__label strong {
-    background: #ffdd57;
-    padding: 4px 8px;
-  }
-  .example__preview {
-    border: 1px solid #ffdd57;
-    padding: 1em 1.5em;
-
-    header,
-    footer {
-      border: none;
-    }
-
-    h3 {
-      opacity: 1;
-      padding: 0;
-      margin: 0 0 1em;
-
-      a {
-        float: none;
-        opacity: 1;
-        margin: 0;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-
 //docs page
 .attribute {
   display: flex;

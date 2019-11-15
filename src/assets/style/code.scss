@@ -1,14 +1,17 @@
-h1, h2, h3, h4 {
-  code {
-    font-size: 0.85em;
-  }
-}
-
 #app {
+
+  h1,
+  h2 {
+    code {
+      font-size: 1.9rem;
+    }
+  }
+
   pre,
   code {
-    font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    font-feature-settings: "liga" 0;
+    font-family: Space Mono, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-feature-settings: "liga"0;
+    font-size: 1.6rem;
     border-radius: 3px;
     line-height: 1.5;
     direction: ltr;
@@ -20,13 +23,17 @@ h1, h2, h3, h4 {
     color: #d8d8d8;
   }
 
-  pre::-moz-selection, pre ::-moz-selection,
-  code::-moz-selection, code ::-moz-selection {
+  pre::-moz-selection,
+  pre ::-moz-selection,
+  code::-moz-selection,
+  code ::-moz-selection {
     text-shadow: none;
   }
 
-  pre::selection, pre ::selection,
-  code::selection, code ::selection {
+  pre::selection,
+  pre ::selection,
+  code::selection,
+  code ::selection {
     text-shadow: none;
   }
 
@@ -40,11 +47,11 @@ h1, h2, h3, h4 {
   }
 
   // Inline code
-  :not(pre) > code {
+  :not(pre)>code {
     color: var(--inline-code-text);
     padding: 0.2rem 0.33rem;
     vertical-align: 1%;
-    font-size: .78em;
+    font-size: 1.6rem;
     background-color: var(--inline-code-bg);
   }
 }
@@ -54,8 +61,7 @@ h1, h2, h3, h4 {
   font-variant-ligatures: none;
 }
 
-.token.comment
-.token.prolog,
+.token.comment .token.prolog,
 .token.doctype,
 .token.cdata {
   color: #585858;
@@ -90,9 +96,11 @@ h1, h2, h3, h4 {
 
 .language-css {
   color: #7ec699;
+
   .token.punctuation {
     color: #f8f8f8;
   }
+
   .token.property {
     color: #d8d8d8;
   }
@@ -121,6 +129,7 @@ h1, h2, h3, h4 {
 
 .token.tag {
   color: #e2777a;
+
   .token.punctuation {
     color: rgba(#e2777a, 0.85);
   }
@@ -129,8 +138,10 @@ h1, h2, h3, h4 {
 .token.attr-name {
   color: lighten(#e2777a, 7);
 }
+
 .token.attr-value {
   color: #7ec699;
+
   .token.punctuation {
     color: #f8f8f8;
   }

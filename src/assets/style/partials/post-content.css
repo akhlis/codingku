@@ -1,0 +1,34 @@
+.page-content p,
+.page-content table {
+    font-size: 1.5rem;
+}
+
+.page-content ul {
+    list-style: square;
+    font-size: 1.4rem;
+    padding: 0 1.5em;
+    margin: 0 0 1.5em 0;
+}
+
+.page-content img {
+    margin-bottom: 2em;
+}
+
+@media all and (max-width: 37.4375em) {
+    .page-content table {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (min-width: 58.25em) {
+    .page-content {
+        padding: 0 6.5em;
+    }
+
+    .page-content img {
+        display: block;
+        max-width: 680px;
+        height: auto;
+        margin: 0 auto 2em;
+    }
+}

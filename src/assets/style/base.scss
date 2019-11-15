@@ -1,39 +1,590 @@
-html, body {
-  background-color: var(--bg);
-  touch-action: manipulation;
-  width: 100%;
-  transition: background-color .3s;
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
+/* --------------------------------------------------------------------- */
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-#app {
-	color: var(--body-color);
+body {
+  margin: 0;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
 }
 
-body *:target {
-	animation: target 2s;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-@keyframes target {
-	0 {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+figcaption,
+figure,
+main {
+  display: block;
 }
 
-img,
-svg {
-  vertical-align: middle;
-  max-width: 100%;
+figure {
+  margin: 1em 40px;
 }
 
 hr {
-  background-color: var(--border-color)!important;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
-::selection { background: var(--select-color); }
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  margin-bottom: 1em !important;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* #RESET
+/* --------------------------------------------------------------------- */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+li > {
+
+  & ol,
+  & ul {
+      margin-bottom: 0;
+  }
+
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  min-width: 0;
+  border: 0;
+}
+
+/* Base styles: opinionated defaults
+/* --------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--secondary-text-color);
+  font-family: var(--body-font);
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+::selection {
+  text-shadow: none;
+  background: var(--link-color);
+}
+
+hr {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin-bottom: 1em;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  margin-bottom: 1.2em;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border-width: inherit;
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote {
+  margin: 0 0 1.5em 0;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+  padding-right: 1.5em;
+  margin-left: 0.5em;
+}
+
+ol ol,
+ul ul,
+ul ol,
+ol ul {
+  margin: 0.5em 0 1em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin: 0.5em 0;
+  padding-left: 0.5em;
+  line-height: 1.6em;
+}
+
+dt {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 120px;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-align: right;
+}
+
+dd {
+  margin: 0 0 5px 0;
+  text-align: left;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.25em 1.6em;
+  border-left: var(--border-color) 0.3em solid;
+  background: var(--body-light-bg);
+}
+
+blockquote p {
+  margin: 0.8em 0;
+  font-family: monospace, monospace;
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+blockquote small {
+  display: inline-block;
+  margin: 0.8em 0 0.8em 1.5em;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+blockquote small:before {
+  content: "\2014 \00A0";
+}
+
+blockquote cite {
+  font-weight: bold;
+}
+
+blockquote cite a {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--hovered-link-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: var(--header-font);
+  line-height: 1.4;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  margin: 0 0 1em;
+  font-size: 2.8rem;
+}
+
+@media all and (max-width: 37.4375em) {
+  h1 {
+      font-size: 2.6rem;
+  }
+}
+
+h2 {
+  margin: 0 0 1em;
+  font-size: 2.6rem;
+}
+
+@media all and (max-width: 37.4375em) {
+  h2 {
+      font-size: 2.2rem;
+  }
+}
+
+h3 {
+  margin: 0 0 1em;
+  font-size: 2.2rem;
+}
+
+@media all and (max-width: 37.4375em) {
+  h3 {
+      font-size: 2rem;
+  }
+}
+
+h4 {
+  margin: 0 0 1em;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h5 {
+  margin: 0 0 1em;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h6 {
+  margin: 0 0 1em;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+table {
+  font-size: 1.6rem;
+  border-collapse: separate;
+  border-spacing: 1px 1px;
+  background: var(--body-light-bg);
+  margin-bottom: 1.5em;
+  border: 1px solid var(--border-color);
+}
+
+table th,
+table td {
+  padding: 0.5em 2em;
+}
+
+table th {
+  color: var(--primary-text-color);
+  background: var(--body-dark-bg);
+}
+
+table td:hover {
+  background: var(--body-dark-bg);
+  color: var(--secondary-text-color);
+}
+
+/* Background-color of the odd rows */
+
+table tr:nth-child(odd) {
+  background: color(var(--body-light-bg) blackness(2%));
+}
+
+/* Background-color of the even rows */
+
+table tr:nth-child(even) {
+  background: color(var(--body-light-bg) blackness(4%));
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: color(var(--border-color) blackness(20%));
+  font-size: 1.4rem;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--border-color);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--border-color);
+}
+
+@media all and (max-width: 37.4375em) {
+  table th,
+  table td {
+      padding: 0.5em 0.6em;
+  }
+}

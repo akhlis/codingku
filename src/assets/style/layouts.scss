@@ -4,6 +4,7 @@
   position: relative;
 
   &,
+  &-lg,
   &-md,
   &-full,
   &-base,
@@ -14,6 +15,7 @@
     margin-right: auto;
     width: 100%;
   }
+  &-lg { max-width: 920px }
   &-md { max-width: 760px }
   &-base { max-width: 680px }
   &-sm { max-width: 630px }
