@@ -149,8 +149,8 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         index: ['README'],
-        baseDir: './html/cssref',
-        pathPrefix: '/html/cssref',
+        baseDir: './cssref',
+        pathPrefix: '/cssref',
         typeName: 'CssrefPage',
         template: './src/templates/CssrefPage.vue',
         plugins: [

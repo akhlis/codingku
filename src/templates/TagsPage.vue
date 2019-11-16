@@ -81,7 +81,7 @@ export default {
   font-size: 16px;
   padding: 1.5em 0;
 }
-#app code.attribute__tag {
+.docs-page code.attribute__tag {
   display: inline-block;
   font-family: "Inconsolata","Source Code Pro","Consolas","Monaco","Courier",monospace;
   font-size: 14px;
@@ -92,16 +92,16 @@ export default {
   background: #BADBFF;
 }
 
-#app code.attribute__tag--required {
+.docs-page code.attribute__tag--required {
   background: #ff4538;
   color: #fff;
 }
 
-#app code.attribute__tag--novalue {
+.docs-page code.attribute__tag--novalue {
   background: #e9d1ff;
 }
 
-#app code.attribute__value-tag {
+.docs-page code.attribute__value-tag {
   position: relative;
   border-radius: 3px;
   color: #333;
@@ -138,6 +138,36 @@ export default {
     flex-shrink: 1;
     width: 70%;
   }
+}
+
+.example {
+    .example__label {
+        margin: 0;
+    }
+
+    .example__label strong {
+        background: #ffdd57;
+        padding: 4px 8px;
+    }
+
+    .example__preview {
+        border: 1px solid #ffdd57;
+        padding: 1em 1.5em;
+
+        header,
+        footer {
+            border: none;
+        }
+
+        a {
+            font-weight: normal;
+            display: inline-block;
+            padding: 0;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--primary-color);
+        }
+    }
 }
 
 </style>
