@@ -1,43 +1,5 @@
 .post__css {
 
-    .align-content {
-        background: hsl(0, 0%, 95%);
-        display: flex;
-        flex-wrap: wrap;
-        height: 300px;
-        padding: 0;
-    }
-
-    #align-content-stretch {
-        align-content: stretch;
-    }
-
-    #align-content-flex-start {
-        align-content: flex-start;
-    }
-
-    #align-content-flex-end {
-        align-content: flex-end;
-    }
-
-    #align-content-center {
-        align-content: center;
-    }
-
-    #align-content-space-between {
-        align-content: space-between;
-    }
-
-    #align-content-space-around {
-        align-content: space-around;
-    }
-
-    .align-content .square {
-        height: 46px;
-        margin: 2px;
-        width: 30%;
-    }
-
     .square {
         align-items: center;
         background: #e6e6e6;
@@ -57,18 +19,6 @@
         color: #fff;
     }
 
-    .align-content .square:nth-child(2) {
-        height: 96px;
-    }
-
-    .align-content .box {
-        height: 150px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
     .box {
         border: 2px solid #4d4d4d;
         border-radius: 3px;
@@ -86,84 +36,228 @@
         }
     }
 
-    .box--red {
-        border-color: #ff4538;
+    .align-content {
+        background: hsl(0, 0%, 95%);
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        padding: 0;
 
-        &:before {
-            content: "Baris Pertama";
-            background: #ff4538;
+        .square {
+            height: 50px;
+            margin: 2px;
+            width: 30%;
+
+            &:nth-child(2) {
+                height: 100px;
+            }
+        }
+
+        .box {
+            height: 150px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            &--red {
+                border-color: #ff4538;
+
+                &:before {
+                    content: "Baris Pertama";
+                    background: #ff4538;
+                }
+            }
+
+            &--green {
+                border-color: #23d160;
+                top: 150px;
+
+                &:before {
+                    content: "Baris Kedua";
+                    background: #23d160;
+                }
+            }
         }
     }
 
-    #align-content-stretch .box--red {
-        height: 175px;
-    }
+    #align-content-stretch {
+        align-content: stretch;
 
-    #align-content-stretch .box--green {
-        height: 125px;
-        top: 175px;
-    }
+        .box--red {
+            height: 175px;
+        }
 
-    .align-content .box--green {
-        top: 150px;
-
-        &:before {
-            content: "Baris Kedua";
-            background: #23d160;
+        .box--green {
+            height: 125px;
+            top: 175px;
         }
     }
 
-    .box--green {
-        border-color: #23d160;
+    #align-content-flex-start {
+        align-content: flex-start;
+
+        .box--red {
+            height: 104px;
+        }
+
+        .box--green {
+            height: 54px;
+            top: 104px;
+        }
     }
 
-    #align-content-flex-start .box--red {
-        height: 100px;
+    #align-content-flex-end {
+        align-content: flex-end;
+
+        .box--red {
+            height: 104px;
+            top: 142px;
+        }
+
+        .box--green {
+            height: 54px;
+            top: 246px;
+        }
     }
 
-    #align-content-flex-start .box--green {
-        height: 50px;
-        top: 100px;
+    #align-content-center {
+        align-content: center;
+
+        .box--red {
+            height: 104px;
+            top: 71px;
+        }
+
+        .box--green {
+            height: 54px;
+            top: 175px;
+        }
     }
 
-    #align-content-flex-end .box--red {
-        height: 100px;
-        top: 150px;
+    #align-content-space-between {
+        align-content: space-between;
+
+        .box--red {
+            height: 104px;
+            top: 0;
+        }
+
+        .box--green {
+            height: 54px;
+            top: 246px;
+        }
     }
 
-    #align-content-flex-end .box--green {
-        height: 50px;
-        top: 250px;
+    #align-content-space-around {
+        align-content: space-around;
+
+        .box--red {
+            height: 104px;
+            top: 36px;
+        }
+
+        .box--green {
+            height: 54px;
+            top: 211px;
+        }
     }
 
-    #align-content-center .box--red {
-        height: 100px;
-        top: 75px;
+    .line {
+        background: #4d4d4d;
+        height: 1px;
+        position: relative;
+
+        &:before {
+            background: #4d4d4d;
+            border-radius: 2px;
+            color: #fff;
+            content: "Garis";
+            display: inline-block;
+            font-size: 1.1rem;
+            height: 15px;
+            line-height: 15px;
+            margin-top: -9px;
+            padding: 2px 6px;
+            vertical-align: top;
+        }
+
+        &--red {
+            &:before {
+                background: #ff4538;
+            }
+        }
     }
 
-    #align-content-center .box--green {
-        height: 50px;
-        top: 175px;
+    .align-items {
+        background: hsl(0, 0%, 95%);
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        padding: 0;
+
+        .square {
+            height: 50px;
+            margin: 0 2px;
+            width: calc(20% - 4px);
+
+            &:nth-child(2) {
+                height: 100px;
+            }
+
+            &:nth-child(4) {
+                height: 75px;
+            }
+        }
+
+        .line {
+            left: 2px;
+            position: absolute;
+            right: 2px;
+
+            &--red {
+                background: #ff4538;
+            }
+        }
     }
 
-    #align-content-space-between .box--red {
-        height: 100px;
-        top: 0;
+    #align-items-flex-start {
+        align-items: flex-start;
+
+        .line {
+            top: 0;
+        }
     }
 
-    #align-content-space-between .box--green {
-        height: 50px;
-        top: 250px;
+    #align-items-flex-end {
+        align-items: flex-end;
+
+        .line {
+            bottom: 0;
+        }
     }
 
-    #align-content-space-around .box--red {
-        height: 100px;
-        top: 38px;
+    #align-items-center {
+        align-items: center;
+
+        .line {
+            top: 50%;
+        }
     }
 
-    #align-content-space-around .box--green {
-        height: 50px;
-        top: 213px;
+    #align-items-baseline {
+        align-items: baseline;
+
+        .line {
+            top: 55px;
+        }
     }
 
+    #align-items-stretch {
+        align-items: stretch;
+
+        .square {
+            height: auto;
+        }
+    }
 }

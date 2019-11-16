@@ -31,8 +31,7 @@ align-items: flex-start | flex-end | center | baseline | stretch
 					<p class="square square--plum">2</p>
 					<p class="square square--plum">3</p>
 					<p class="square square--plum">4</p><p class="square square--plum">5</p>
-				<div class="box box--red"></div>
-				<div class="box box--green"></div>
+				<div class="line line--red"></div>
 			</div>
 		</div>
 	</aside>
@@ -40,22 +39,22 @@ align-items: flex-start | flex-end | center | baseline | stretch
 <section class="example">
 	<header class="example__header">
 		<p class="example__name">
-			<code class="example--value">align-content: flex-start;</code>
+			<code class="example--value">align-items: flex-end;</code>
 		</p>
 		<div class="example__description">
-			<p>Each line will only fill the space it needs. They will all move towards the start of the flexbox/grid container's cross axis.</p>
+			<p>The flexbox items are aligned at the end of the cross axis.</p>
+			<p>By default, the cross axis is vertical. This means the flexbox items will be aligned vertically at the bottom.</p>
 		</div>
 	</header>
 	<aside class="example__preview">
 		<div class="example__browser"><i></i><i></i><i></i></div>
 			<div class="example__output">
-				<div class="example__output-div align-content" id="align-content-flex-start">
+				<div class="example__output-div align-items" id="align-items-flex-end">
 					<p class="square square--plum">1</p>
 					<p class="square square--plum">2</p>
 					<p class="square square--plum">3</p>
 					<p class="square square--plum">4</p><p class="square square--plum">5</p>
-				<div class="box box--red"></div>
-				<div class="box box--green"></div>
+				<div class="line line--red"></div>
 			</div>
 		</div>
 	</aside>
@@ -63,22 +62,22 @@ align-items: flex-start | flex-end | center | baseline | stretch
 <section class="example">
 	<header class="example__header">
 		<p class="example__name">
-			<code class="example--value">align-content: flex-end;</code>
+			<code class="example--value">align-items: center;</code>
 		</p>
 		<div class="example__description">
-			<p>Each line will only fill the space it needs. They will all move towards the end of the flexbox/grid container's cross axis.</p>
+			<p>The flexbox items are aligned at the center of the cross axis.</p>
+			<p>By default, the cross axis is vertical. This means the flexbox items will be centered vertically.</p>
 		</div>
 	</header>
 	<aside class="example__preview">
 		<div class="example__browser"><i></i><i></i><i></i></div>
 			<div class="example__output">
-				<div class="example__output-div align-content" id="align-content-flex-end">
+				<div class="example__output-div align-items" id="align-items-center">
 					<p class="square square--plum">1</p>
 					<p class="square square--plum">2</p>
 					<p class="square square--plum">3</p>
 					<p class="square square--plum">4</p><p class="square square--plum">5</p>
-				<div class="box box--red"></div>
-				<div class="box box--green"></div>
+				<div class="line line--red"></div>
 			</div>
 		</div>
 	</aside>
@@ -86,22 +85,22 @@ align-items: flex-start | flex-end | center | baseline | stretch
 <section class="example">
 	<header class="example__header">
 		<p class="example__name">
-			<code class="example--value">align-content: center;</code>
+			<code class="example--value">align-items: baseline;</code>
 		</p>
 		<div class="example__description">
-			<p>Each line will only fill the space it needs. They will all move towards the center of the flexbox/grid container's cross axis.</p>
+			<p>The flexbox items are aligned at the baseline of the cross axis.</p>
+			<p>By default, the cross axis is vertical. This means the flexbox items will align themselves in order to have the baseline of their text align along a horizontal line.</p>
 		</div>
 	</header>
 	<aside class="example__preview">
 		<div class="example__browser"><i></i><i></i><i></i></div>
 			<div class="example__output">
-				<div class="example__output-div align-content" id="align-content-center">
+				<div class="example__output-div align-items" id="align-items-baseline">
 					<p class="square square--plum">1</p>
 					<p class="square square--plum">2</p>
 					<p class="square square--plum">3</p>
 					<p class="square square--plum">4</p><p class="square square--plum">5</p>
-				<div class="box box--red"></div>
-				<div class="box box--green"></div>
+				<div class="line line--red"></div>
 			</div>
 		</div>
 	</aside>
@@ -109,23 +108,22 @@ align-items: flex-start | flex-end | center | baseline | stretch
 <section class="example">
 	<header class="example__header">
 		<p class="example__name">
-        	<code class="example--default">default</code>
-			<code class="example--value">align-content: space-between;</code>
+            <code class="example--default">default</code>
+			<code class="example--value">align-items: stretch;</code>
 		</p>
 		<div class="example__description">
-			<p>Each line will only fill the space it needs. The remaining space will appear between the lines.</p>
+			<p>The flexbox items will stretch across the whole cross axis.</p>
+			<p>By default, the cross axis is vertical. This means the flexbox items will fill up the whole vertical space.</p>
 		</div>
 	</header>
 	<aside class="example__preview">
 		<div class="example__browser"><i></i><i></i><i></i></div>
 			<div class="example__output">
-				<div class="example__output-div align-content" id="align-content-space-between">
+				<div class="example__output-div align-items" id="align-items-stretch">
 					<p class="square square--plum">1</p>
 					<p class="square square--plum">2</p>
 					<p class="square square--plum">3</p>
 					<p class="square square--plum">4</p><p class="square square--plum">5</p>
-				<div class="box box--red"></div>
-				<div class="box box--green"></div>
 			</div>
 		</div>
 	</aside>
