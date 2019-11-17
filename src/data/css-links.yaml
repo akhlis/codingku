@@ -104,12 +104,12 @@
       link: /cssref/align-content
     - title: align-items
       link: /cssref/align-items
-    - title: <a>
-      link: /cssref/tag-a
-    - title: <abbr>
-      link: /cssref/tag-abbr
-    - title: <acronym>
-      link: /html/tag-acronym
+    - title: align-self
+      link: /cssref/align-self
+    - title: animation-delay
+      link: /cssref/animation-delay
+    - title: animation-direction
+      link: /cssref/animation-direction
     - title: <address>
       link: /cssref/tag-address
     - title: <applet>
