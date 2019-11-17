@@ -16,23 +16,6 @@ module.exports = {
       .use('svg-to-vue-component')
       .loader('svg-to-vue-component/loader')
 
-    config.module
-      .rule('postcss')
-      .oneOf('normal')
-      .use('postcss-loader')
-      .tap(options => {
-        options.plugins.unshift(...[
-          require('postcss-import'),
-          require('postcss-nested'),
-          require('postcss-custom-media'),
-          require('postcss-preset-env'),
-          require('postcss-url'),
-          require('postcss-color-function'),
-          require('postcss-custom-properties'),
-        ])
-        return options
-      })
-
     if (isServer) {
       config.externals(nodeExternals({
         whitelist: [
