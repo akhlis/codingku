@@ -110,144 +110,144 @@
       link: /cssref/animation-delay
     - title: animation-direction
       link: /cssref/animation-direction
-    - title: <address>
-      link: /cssref/tag-address
-    - title: <applet>
-      link: /html/tag-applet
-    - title: <area>
-      link: /cssref/tag-area
-    - title: <article>
-      link: /cssref/tag-article
-    - title: <aside>
-      link: /cssref/tag-aside
-    - title: <audio>
-      link: /cssref/tag-audio
-    - title: <b>
-      link: /cssref/tag-b
-    - title: <base>
-      link: /cssref/tag-base
-    - title: <basefont>
-      link: /cssref/tag-basefont
-    - title: <bdi>
-      link: /cssref/tag-bdi
-    - title: <bdo>
-      link: /cssref/tag-bdo
-    - title: <big>
-      link: /cssref/tag-big
-    - title: <blockquote>
-      link: /cssref/tag-blockquote
-    - title: <body>
-      link: /cssref/tag-body
-    - title: <br>
-      link: /cssref/tag-br
-    - title: <button>
-      link: /cssref/tag-button
-    - title: <canvas>
-      link: /cssref/tag-canvas
-    - title: <caption>
-      link: /cssref/tag-caption
-    - title: <center>
-      link: /cssref/tag-center
-    - title: <cite>
-      link: /cssref/tag-cite
-    - title: <code>
-      link: /cssref/tag-code
-    - title: <col>
-      link: /cssref/tag-col
-    - title: <colgroup>
-      link: /cssref/tag-colgroup
-    - title: <data>
-      link: /cssref/tag-data
-    - title: <datalist>
-      link: /cssref/tag-datalist
-    - title: <dd>
-      link: /cssref/tag-dd
-    - title: <del>
-      link: /cssref/tag-del
-    - title: <details>
-      link: /cssref/tag-details
-    - title: <dfn>
-      link: /cssref/tag-dfn
-    - title: <dialog>
-      link: /cssref/tag-dialog
-    - title: <dir>
-      link: /cssref/tag-dir
-    - title: <div>
-      link: /cssref/tag-div
-    - title: <dl>
-      link: /cssref/tag-dl
-    - title: <dt>
-      link: /cssref/tag-dt
-    - title: <em>
-      link: /cssref/tag-em
-    - title: <embed>
-      link: /cssref/tag-embed
-    - title: <fieldset>
-      link: /cssref/tag-fieldset
-    - title: <figcaption>
-      link: /cssref/tag-figcaption
-    - title: <figure>
-      link: /cssref/tag-figure
-    - title: <font>
-      link: /cssref/tag-font
-    - title: <footer>
-      link: /cssref/tag-footer
-    - title: <form>
-      link: /cssref/tag-form
-    - title: <frame>
-      link: /cssref/tag-frame
-    - title: <frameset>
-      link: /cssref/tag-frameset
-    - title: <h1>
-      link: /cssref/tag-h1
-    - title: <h2>
-      link: /cssref/tag-h2
-    - title: <h3>
-      link: /cssref/tag-h3
-    - title: <h4>
-      link: /cssref/tag-h4
-    - title: <h5>
-      link: /cssref/tag-h5
-    - title: <h6>
-      link: /cssref/tag-h6
-    - title: <head>
-      link: /cssref/tag-head
-    - title: <header>
-      link: /cssref/tag-header
-    - title: <hr>
-      link: /cssref/tag-hr
-    - title: <html>
-      link: /cssref/tag-html
-    - title: <i>
-      link: /cssref/tag-i
-    - title: <iframe>
-      link: /cssref/tag-iframe
-    - title: <img>
-      link: /cssref/tag-img
-    - title: <input>
-      link: /cssref/tag-input
-    - title: <ins>
-      link: /cssref/tag-ins
-    - title: <kbd>
-      link: /cssref/tag-kbd
-    - title: <label>
-      link: /cssref/tag-label
-    - title: <legend>
-      link: /cssref/tag-legend
-    - title: <li>
-      link: /cssref/tag-li
-    - title: <link>
-      link: /cssref/tag-link
-    - title: <main>
-      link: /cssref/tag-main
-    - title: <map>
-      link: /cssref/tag-map
-    - title: <mark>
-      link: /cssref/tag-mark
-    - title: <meta>
-      link: /cssref/tag-meta
-    - title: <meter>
-      link: /cssref/tag-meter
+    - title: animation-duration
+      link: /cssref/animation-duration
+    - title: animation-fill-mode
+      link: /cssref/animation-fill-mode
+    - title: animation-iteration-count
+      link: /cssref/animation-iteration-count
+    - title: animation-name
+      link: /cssref/animation-name
+    - title: animation-play-state
+      link: /cssref/animation-play-state
+    - title: animation-timing-function
+      link: /cssref/animation-timing-function
+    - title: animation
+      link: /cssref/animation
+    - title: background-attachment
+      link: /cssref/background-attachment
+    - title: background-clip
+      link: /cssref/background-clip
+    - title: background-color
+      link: /cssref/background-color
+    - title: background-image
+      link: /cssref/background-image
+    - title: background-origin
+      link: /cssref/background-origin
+    - title: background-position
+      link: /cssref/background-position
+    - title: background-repeat
+      link: /cssref/background-repeat
+    - title: background-size
+      link: /cssref/background-size
+    - title: background
+      link: /cssref/background
+    - title: border-bottom-color
+      link: /cssref/border-bottom-color
+    - title: border-bottom-left-radius
+      link: /cssref/border-bottom-left-radius
+    - title: border-bottom-right-radius
+      link: /cssref/border-bottom-right-radius
+    - title: border-bottom-style
+      link: /cssref/border-bottom-style
+    - title: border-bottom-width
+      link: /cssref/border-bottom-width
+    - title: border-bottom
+      link: /cssref/border-bottom
+    - title: border-collapse
+      link: /cssref/border-collapse
+    - title: border-color
+      link: /cssref/border-color
+    - title: border-left-color
+      link: /cssref/border-left-color
+    - title: border-left-style
+      link: /cssref/border-left-style
+    - title: border-left-width
+      link: /cssref/border-left-width
+    - title: border-left
+      link: /cssref/border-left
+    - title: border-radius
+      link: /cssref/border-radius
+    - title: border-right-color
+      link: /cssref/border-right-color
+    - title: border-right-style
+      link: /cssref/border-right-style
+    - title: border-right-width
+      link: /cssref/border-right-width
+    - title: border-right
+      link: /cssref/border-right
+    - title: border-style
+      link: /cssref/border-style
+    - title: border-top-color
+      link: /cssref/border-top-color
+    - title: border-top-left-radius
+      link: /cssref/border-top-left-radius
+    - title: border-top-right-radius
+      link: /cssref/border-top-right-radius
+    - title: border-top-style
+      link: /cssref/border-top-style
+    - title: border-top-width
+      link: /cssref/border-top-width
+    - title: border-top
+      link: /cssref/border-top
+    - title: border-width
+      link: /cssref/border-width
+    - title: border
+      link: /cssref/border
+    - title: bottom
+      link: /cssref/bottom
+    - title: box-shadow
+      link: /cssref/box-shadow
+    - title: box-sizing
+      link: /cssref/box-sizing
+    - title: clear
+      link: /cssref/clear
+    - title: color
+      link: /cssref/color
+    - title: column-count
+      link: /cssref/column-count
+    - title: column-gap
+      link: /cssref/column-gap
+    - title: column-width
+      link: /cssref/column-width
+    - title: content
+      link: /cssref/content
+    - title: cursor
+      link: /cssref/cursor
+    - title: display
+      link: /cssref/display
+    - title: flex-basis
+      link: /cssref/flex-basis
+    - title: flex-direction
+      link: /cssref/flex-direction
+    - title: flex-flow
+      link: /cssref/flex-flow
+    - title: flex-grow
+      link: /cssref/flex-grow
+    - title: flex-shrink
+      link: /cssref/flex-shrink
+    - title: flex-wrap
+      link: /cssref/flex-wrap
+    - title: float
+      link: /cssref/float
+    - title: font
+      link: /cssref/font
+    - title: font-family
+      link: /cssref/font-family
+    - title: font-size
+      link: /cssref/font-size
+    - title: font-style
+      link: /cssref/font-style
+    - title: font-variant
+      link: /cssref/font-variant
+    - title: font-weight
+      link: /cssref/font-weight
+    - title: grid
+      link: /cssref/grid
+    - title: grid-area
+      link: /cssref/grid-area
+    - title: grid-auto-columns
+      link: /cssref/grid-auto-columns
     - title: <nav>
       link: /cssref/tag-nav
     - title: <noframes>
@@ -256,54 +256,54 @@
       link: /cssref/tag-noscript
     - title: <object>
       link: /cssref/tag-object
-    - title: <ol>
-      link: /cssref/tag-ol
-    - title: <optgroup>
-      link: /cssref/tag-optgroup
-    - title: <option>
-      link: /cssref/tag-option
-    - title: <output>
-      link: /cssref/tag-output
-    - title: <p>
-      link: /cssref/tag-p
-    - title: <param>
-      link: /cssref/tag-param
-    - title: <picture>
-      link: /cssref/tag-picture
-    - title: <pre>
-      link: /cssref/tag-pre
-    - title: <progress>
-      link: /cssref/tag-progress
-    - title: <q>
-      link: /cssref/tag-q
-    - title: <rp>
-      link: /cssref/tag-rp
-    - title: <rt>
-      link: /cssref/tag-rt
-    - title: <rtc>
-      link: /cssref/tag-rtc
-    - title: <ruby>
-      link: /cssref/tag-ruby
-    - title: <s>
-      link: /cssref/tag-s
-    - title: <samp>
-      link: /cssref/tag-samp
-    - title: <script>
-      link: /cssref/tag-script
-    - title: <section>
-      link: /cssref/tag-section
-    - title: <select>
-      link: /cssref/tag-select
-    - title: <small>
-      link: /cssref/tag-small
-    - title: <source>
-      link: /cssref/tag-source
-    - title: <span>
-      link: /cssref/tag-span
-    - title: <strike>
-      link: /cssref/tag-strike
-    - title: <strong>
-      link: /cssref/tag-strong
+    - title: grid-auto-flow
+      link: /cssref/grid-auto-flow
+    - title: grid-auto-rows
+      link: /cssref/grid-auto-rows
+    - title: grid-column
+      link: /cssref/grid-column
+    - title: grid-column-end
+      link: /cssref/grid-column-end
+    - title: grid-column-gap
+      link: /cssref/grid-column-gap
+    - title: grid-column-start
+      link: /cssref/grid-column-start
+    - title: grid-gap
+      link: /cssref/grid-gap
+    - title: grid-row
+      link: /cssref/grid-row
+    - title: grid-row-end
+      link: /cssref/grid-row-end
+    - title: grid-row-gap
+      link: /cssref/grid-row-gap
+    - title: grid-row-start
+      link: /cssref/grid-row-start
+    - title: grid-template
+      link: /cssref/grid-template
+    - title: grid-template-areas
+      link: /cssref/grid-template-areas
+    - title: grid-template-columns
+      link: /cssref/grid-template-columns
+    - title: grid-template-rows
+      link: /cssref/grid-template-rows
+    - title: height
+      link: /cssref/height
+    - title: justify-content
+      link: /cssref/justify-content
+    - title: left
+      link: /cssref/left
+    - title: letter-spacing
+      link: /cssref/letter-spacing
+    - title: line-height
+      link: /cssref/line-height
+    - title: list-style
+      link: /cssref/list-style
+    - title: list-style-image
+      link: /cssref/list-style-image
+    - title: list-style-position
+      link: /cssref/list-style-position
+    - title: list-style-type
+      link: /cssref/list-style-type
     - title: <style>
       link: /cssref/tag-style
     - title: <sub>

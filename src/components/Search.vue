@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-search search">
+    <div class="nav__search search">
         <div class="search__box">
             <div class="search__form">
                 <input class="search__form-input" v-model="query" aria-label="..." type="search" placeholder="Cari...">
@@ -20,8 +20,26 @@
 </template>
 
 <static-query>
-    query AllProduct {
-        allProduct: allHtmlPage {
+    query AllHtml {
+        allHtml: allHtmlPage {
+            edges {
+                node {
+                    id
+                    title
+                    path
+                }
+            }
+        }
+        allTagshtml: allTagsPage {
+            edges {
+                node {
+                    id
+                    title
+                    path
+                }
+            }
+        }
+        allCssref: allCssrefPage {
             edges {
                 node {
                     id
@@ -72,132 +90,9 @@
                     field: ["title"]
                 }
             });
-            this.index.add(this.$static.allProduct.edges.map(e => e.node));
+            this.index.add(this.$static.allHtml.edges.map(e => e.node));
+            this.index.add(this.$static.allTagshtml.edges.map(e => e.node));
+            this.index.add(this.$static.allCssref.edges.map(e => e.node));
         },
     }
 </script>
-
-<style lang="postcss" scoped>
-    .search__form {
-        position: relative;
-
-        & input {
-            color: #969696;
-            width: 270px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            outline: none;
-            background-color: transparent;
-            padding: 6px 8px;
-            box-sizing: border-box;
-        }
-
-        &:hover .search__form-clear,
-        &:focus .search__form-clear {
-            color: #969696;
-        }
-
-        & input:focus {
-            border-color: var(--accent-color);
-        }
-    }
-
-    .search__form-input::-moz-placeholder {
-        color: #ddd;
-    }
-
-    .search__form-input::-webkit-input-placeholder {
-        color: #ddd;
-    }
-
-    .search__form-input:hover::-moz-placeholder,
-    .search__form-input:focus::-moz-placeholder {
-        color: #ddd;
-    }
-
-    .search__form-input:hover::-webkit-input-placeholder,
-    .search__form-input:focus::-webkit-input-placeholder {
-        color: #ddd;
-    }
-
-    .search__form-search,
-    .search__form-clear {
-        position: absolute;
-    }
-
-    .search__form-search {
-        color: #969696;
-        top: 9px;
-        right: 0.5em;
-    }
-
-    .search__form-clear {
-        color: var(--light-text-color);
-        top: 5px;
-        right: 1.75em;
-        box-sizing: content-box;
-        padding: 4px;
-        cursor: pointer;
-    }
-
-    .search__box {
-        position: relative;
-    }
-
-    .search__query {
-        position: absolute;
-        top: 32px;
-        width: 100%;
-        max-height: 400px;
-        overflow-y: auto;
-        background: var(--main-bg);
-        transition: .3s cubic-bezier(.25, .8, .5, 1);
-        padding: 1em 0;
-        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-        z-index: 3;
-    }
-
-    .search__item {
-        display: flex;
-        align-items: center;
-        padding: 0.5em;
-
-        &:hover,
-        &:active {
-            background: var(--body-light-bg);
-        }
-    }
-
-    .search__item-link {
-        color: var(--secondary-text-color);
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    .search__item-image {
-        flex-basis: 15%;
-        position: relative;
-        padding-top: calc(4/3 * 15%);
-
-        & img {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 4;
-        }
-    }
-
-    .search__item-content {
-        flex-basis: 85%;
-        padding-left: 1em;
-    }
-
-    .search__item-title {
-        font-size: 1.4rem;
-        font-weight: normal;
-        margin: 0;
-    }
-</style>

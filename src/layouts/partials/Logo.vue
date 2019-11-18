@@ -1,5 +1,5 @@
 <template>
-  <div class="logo">
+  <div class="nav__brand logo">
     <g-link class="nav-brand site-link" to="/" title="Back to home">
       <Logo class="site-img" width="156" />
     </g-link>
@@ -15,7 +15,7 @@
     }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss">
     .logo {
         text-align: center;
 

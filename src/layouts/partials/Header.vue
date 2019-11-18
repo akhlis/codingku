@@ -7,7 +7,7 @@
                 <div class="nav-mobile nav__toggle" @click="toggle" :class="{ active: isActive }" v-if="isPhone || isMobile">
                     <span class="nav__toggle-item"></span>
                 </div>
-                <Nav class="nav-menu" :class="{ menuMobile: isActive && (isPhone || isMobile) }" />
+                <Nav class="nav__menu nav-menu" :class="{ menuMobile: isActive && (isPhone || isMobile) }" />
                 <search v-if="isLaptop || isDesktop" />
             </div>
             <searchMobile v-if="isPhone || isMobile" />
@@ -65,7 +65,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .site__header {
   z-index: 20;
   position: relative;
@@ -105,6 +105,19 @@
     margin-right: auto;
     max-width: calc(115.85714rem + 1vw);
     padding: .9rem 0;
+  }
+
+  .nav__brand {
+    flex: 1;
+  }
+
+  .nav__menu {
+    flex: 3;
+    padding-right: 3em;
+  }
+
+  .nav__search {
+    flex: 1;
   }
 }
 
